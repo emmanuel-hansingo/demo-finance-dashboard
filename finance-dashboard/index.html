@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Finance Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+<h1>📈 Finance Dashboard</h1>
+
+<div class="controls">
+
+<select id="ticker">
+<option value="AAPL">Apple</option>
+<option value="MSFT">Microsoft</option>
+<option value="TSLA">Tesla</option>
+<option value="NVDA">Nvidia</option>
+</select>
+
+<button onclick="updateDashboard()">
+Load Chart
+</button>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Portfolio Value</h3>
+<h2>$125,400</h2>
+</div>
+
+<div class="card">
+<h3>Daily Return</h3>
+<h2>+2.3%</h2>
+</div>
+
+<div class="card">
+<h3>Volatility</h3>
+<h2>18.7%</h2>
+</div>
+
+</div>
+
+<div id="stockChart"></div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
